@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>converter</title>
+    <link rel="stylesheet" href="tailwind.css">
+</head>
+<body>
+    <form>
+        <p>What do you want to convert</p>
+
+        <p>Weight:</p>
+        <input type="radio" name="convert" value="kgToLbs" required> kg to Lbs<br>
+        <input type="radio" name="convert" value="lbsToKg"> lbs to kg
+
+        <p>Temperature:</p>
+        <input type="radio" name="convert" value="CToF"> C to °F<br>
+        <input type="radio" name="convert" value="FToC"> °F to C
+
+        <p>Distance:</p>
+        <input type="radio" name="convert" value="kmToM"> km to M<br>
+        <input type="radio" name="convert" value="mToKm"> M to Km<br><br>
+
+        <label for="textInput">Enter value:</label>
+        <input type="number" name="value" id="textInput" required><br><br>
+
+        <input type="submit" value="Submit" id="button">
+        <p id="displayText"></p>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
