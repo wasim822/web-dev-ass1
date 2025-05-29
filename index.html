@@ -1,37 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>converter</title>
-    <link rel="stylesheet" href="tailwind.css">
+  <meta charset="UTF-8">
+  <title>Converter</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="script.js" defer></script>
 </head>
-<body>
-    <form>
-        <p>What do you want to convert</p>
+<body class="bg-gray-100 p-6 min-h-screen flex justify-center items-center">
+  <form class="bg-white p-6 rounded shadow max-w-md w-full space-y-4">
+    <p class="text-xl font-bold text-center">What do you want to convert?</p>
 
-        <p>Weight:</p>
-        <input type="radio" name="convert" value="kgToLbs" required> kg to Lbs<br>
-        <input type="radio" name="convert" value="lbsToKg"> lbs to kg
+    <div>
+      <p class="font-semibold">Weight:</p>
+      <label><input type="radio" name="convert" id="kg_to_p" required> kg to p</label><br>
+      <label><input type="radio" name="convert" id="p_to_kg" required> p to kg</label>
+    </div>
 
-        <p>Temperature:</p>
-        <input type="radio" name="convert" value="CToF"> C to °F<br>
-        <input type="radio" name="convert" value="FToC"> °F to C
+    <div>
+      <p class="font-semibold">Temperature:</p>
+      <label><input type="radio" name="convert" id="°C_to_°F" required> C to °F</label><br>
+      <label><input type="radio" name="convert" id="°F_to_°C" required> °F to C</label>
+    </div>
 
-        <p>Distance:</p>
-        <input type="radio" name="convert" value="kmToM"> km to M<br>
-        <input type="radio" name="convert" value="mToKm"> M to Km<br><br>
+    <div>
+      <p class="font-semibold">Distance:</p>
+      <label><input type="radio" name="convert" id="km_to_M" required> km to M</label><br>
+      <label><input type="radio" name="convert" id="M_to_km" required> M to Km</label>
+    </div>
 
-        <label for="textInput">Enter value:</label>
-        <input type="number" name="value" id="textInput" required><br><br>
+    <div>
+      <label class="block font-semibold">Enter value:</label>
+      <input type="text" name="value" id="textInput" class="border p-2 w-full rounded" required>
+    </div>
 
-        <input type="submit" value="Submit" id="button">
-        <p id="displayText"></p>
-    </form>
+    <input type="submit" value="Convert" id="button" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded">
 
-    <script src="script.js"></script>
+    <p id="displayText" class="text-center text-green-700 font-medium">hi</p>
+  </form>
 </body>
 </html>
+
+
+
+
+
 
 
 
